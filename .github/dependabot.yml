@@ -1,0 +1,45 @@
+version: 2
+updates:
+  # npm workspaces share the root package-lock.json, so one root entry covers every app.
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    open-pull-requests-limit: 10
+    groups:
+      nestjs:
+        patterns: ["@nestjs/*"]
+      tanstack:
+        patterns: ["@tanstack/*"]
+      lint-and-format:
+        patterns:
+          - "eslint*"
+          - "@eslint/*"
+          - "typescript-eslint"
+          - "prettier"
+          - "globals"
+      minor-and-patch:
+        update-types: ["minor", "patch"]
+    ignore:
+      # Expo SDK pins these; upgrade them together with `npx expo install --fix`.
+      - dependency-name: "expo"
+      - dependency-name: "expo-*"
+      - dependency-name: "react-native"
+      - dependency-name: "react-native-*"
+      - dependency-name: "react"
+      - dependency-name: "react-dom"
+      - dependency-name: "@types/react"
+      # Blocked until typescript-eslint and ts-jest support TypeScript 7.
+      - dependency-name: "typescript"
+        update-types: ["version-update:semver-major"]
+      # Blocked until eslint-plugin-import supports ESLint 10.
+      - dependency-name: "eslint"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "@eslint/js"
+        update-types: ["version-update:semver-major"]
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly

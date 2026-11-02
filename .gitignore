@@ -1,0 +1,57 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+dist-ssr/
+build/
+.tanstack/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Environment files
+.env
+.env.local
+.env.*.local
+.env.dev
+.env.stg
+.env.prod
+*.local
+
+# Tests
+coverage/
+.nyc_output/
+
+# Temp and runtime data
+.temp/
+.tmp/
+pids/
+*.pid
+*.pid.lock
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Supabase local state
+supabase/.branches/
+supabase/.temp/
+supabase/.env.keys
+
+# OS and editors
+.DS_Store
+.DS_Store?
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+seed.sql

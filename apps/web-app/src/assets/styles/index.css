@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+@config "../../../tailwind.config.ts";
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --color-primary-base: 59 158 217;
+  --color-primary-dark: 40 128 185;
+  --color-primary-light: 126 200 232;
+
+  --color-secondary-base: 100 118 143;
+  --color-secondary-dark: 74 90 111;
+  --color-secondary-light: 134 148 171;
+  --color-secondary-lightest: 228 232 237;
+
+  --color-fill-primary: 13 31 51;
+  --color-fill-secondary: 0 21 35;
+  --color-fill-tertiary: 245 243 238;
+  --color-fill-quarternary: 0 44 73;
+
+  --color-separator-primary: 229 231 235;
+  --color-separator-secondary: 209 213 219;
+  --color-separator-tertiary: 210 210 201;
+  --color-separator-quarternary: 107 114 128;
+
+  --color-card-primary: 255 255 255;
+  --color-card-secondary: 240 242 245;
+  --color-card-tertiary: 228 232 237;
+
+  --color-success-base: 16 185 129;
+  --color-success-dark: 5 150 105;
+  --color-success-light: 110 231 183;
+
+  --color-warning-base: 245 158 11;
+  --color-warning-dark: 217 119 6;
+  --color-warning-light: 251 191 36;
+
+  --color-danger-base: 239 68 68;
+  --color-danger-dark: 220 38 38;
+  --color-danger-light: 248 113 113;
+
+  --color-info-base: 107 63 160;
+  --color-info-dark: 90 50 140;
+  --color-info-light: 138 95 192;
+
+  --color-title: 13 31 51;
+  --color-content: 55 65 81;
+  --color-placeholder: 156 163 175;
+  --color-disabled: 209 213 219;
+
+  font-family: Roboto, system-ui, sans-serif;
+}
+
+[data-theme='dark'] {
+  --color-primary-base: 108 99 255;
+  --color-primary-dark: 91 84 232;
+  --color-primary-light: 122 114 255;
+
+  --color-secondary-base: 184 184 184;
+  --color-secondary-dark: 244 244 245;
+  --color-secondary-light: 138 138 138;
+  --color-secondary-lightest: 43 43 43;
+
+  --color-fill-primary: 244 244 245;
+  --color-fill-secondary: 232 232 232;
+  --color-fill-tertiary: 16 16 16;
+  --color-fill-quarternary: 232 232 232;
+
+  --color-separator-primary: 46 46 46;
+  --color-separator-secondary: 69 69 69;
+  --color-separator-tertiary: 69 69 69;
+  --color-separator-quarternary: 92 92 92;
+
+  --color-card-primary: 23 23 23;
+  --color-card-secondary: 16 16 16;
+  --color-card-tertiary: 43 43 43;
+
+  --color-success-base: 24 212 154;
+  --color-success-dark: 24 212 154;
+  --color-success-light: 20 125 96;
+
+  --color-warning-base: 245 166 35;
+  --color-warning-dark: 245 166 35;
+  --color-warning-light: 130 88 18;
+
+  --color-danger-base: 255 90 95;
+  --color-danger-dark: 255 90 95;
+  --color-danger-light: 122 42 45;
+
+  --color-info-base: 108 99 255;
+  --color-info-dark: 122 114 255;
+  --color-info-light: 91 84 232;
+
+  --color-title: 244 244 245;
+  --color-content: 184 184 184;
+  --color-placeholder: 138 138 138;
+  --color-disabled: 74 74 74;
+}
+
+.oswald {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+}
